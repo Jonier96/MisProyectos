@@ -1,0 +1,35 @@
+### //enviar datos a la nube
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "dadawdwa Jobsss",
+    "lastName": "Jobsss",
+    "phone": "323213223",
+    "gender": "H",
+    "email": "dasdadwd@gmail.com",
+    "password": "12391304"
+    
+}
+
+### // visualizar datos 
+ GET http://localhost:9000/api/users HTTP/1.1
+
+### // buscar datos
+ GET http://localhost:9000/api/users/6332455518807261fc82e0c2 HTTP/1.1
+
+### // cambiar datos
+PUT http://localhost:9000/api/users/632aa95f73edc5e6b6a8d38a HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "dadawdwa",
+    "lastName": "Jobsss",
+    "phone": "323232",
+    "gender":"Masculino",
+    "password":"12391304",
+    "email": "stevejobsss123@gmail.com"
+}
+
+### // Eliminar datos
+DELETE  http://localhost:9000/api/users/6332455518807261fc82e0c2 HTTP/1.1
